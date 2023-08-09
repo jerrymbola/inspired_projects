@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+}
+
+.keypad {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.buttons {
+    place-self: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4px 2.5rem;
+    justify-content: center;
+}
+
+.num-button {
+    display: grid;
+    place-items: center;
+}
+
+.digits {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.num-button .digits-star,
+.num-button .digits-hash {
+    grid-row: 1 / span 2;
+}
+
+.letters {
+    display: grid;
+    place-items: center;
+    color: #121618;
+    font-size: 0.7rem;
+}
+
+.icons {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-left button {
+    background-color: #00cb93;
+    border: none;
+    padding: 8px 10px;
+    color: #ffffff;
+    border-radius: 20px 0 0 20px;
+    font-size: 1rem;
+}
+
+.btn-right button {
+    background-color: #00cb93;
+    border: none;
+    padding: 8px 10px;
+    color: #ffffff;
+    border-radius: 0 20px 20px 0;
+    margin-right: 4px;
+    font-size: 1rem;
+}
+
+.icons .fa {
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
