@@ -11,7 +11,6 @@ body {
     display: grid;
     place-items: center;
     background: linear-gradient(-45deg, #f79d00,#64f38c);
-    padding: 1rem 0;
 }
 
 /* Phone Screen */
