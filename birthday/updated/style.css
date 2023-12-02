@@ -1,0 +1,212 @@
+body {
+    font-family: Segoe Script;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo h2 {
+    color: #0000ff;
+    font-family: MV Boli;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #0000ff;
+    animation: bulb 10s ease-in-out infinite;
+}
+
+@keyframes bulb {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+}
+
+.bar {
+    width: 40px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+.bar.top {
+    width: 80%;
+}
+
+.bar.bottom {
+    width: 40%;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    .logo h2 {
+        font-size: 1.5em;
+    }
+
+    header h1 {
+        font-size: 0.5rem;
+    }
+
+    main section {
+        flex-direction: column;
+    }
+
+    .img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    .logo h2 {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .menu-icon {
+        width: 1.5rem;
+        height: 0.8rem;
+    }
+
+    .bar {
+        width: 1.5rem;
+        height: 2px;
+    }
+
+
+    main section {
+        flex-direction: column;
+    }
+
+    section .content p {
+        font-size: 0.9rem;
+        padding: 1.2rem;
+    }
+    section .content button{
+        font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    }
+}
+
+
+main {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    flex-basis: 50%;
+}
+
+.content p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content button {
+    background: #0000ff;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.content button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Segoe Script;
+}
+
+.content button:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    background: #000;
+    color: #ffffff;
+}
+
+.img {
+    flex-basis: 50%;
+}
+
+.img img {
+    width: 100%;
+    object-fit: contain;
+}
+.facts{
+    align-items: flex-start;
+}
+
+.facts-content{
+    padding: 0 1rem;
+    font-weight: bold;
+}
+li {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #e6f7ff;
+    /* Light blue as the accent color */
+}

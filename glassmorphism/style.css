@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background: url(./img/pexels-darius-krause-2609107.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blur{
+    background: transparent;
+    color: #fffbfa;
+    text-align: center;
+    border-radius: 1.2rem;
+    backdrop-filter: blur(15px);
+    flex-basis: 40%;
+    padding: 1rem;
+}
+.blur h1{
+    font-size: 2em;
+}
+.blur p{
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
