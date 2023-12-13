@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+section {
+    width: 100vw;
+        height: 100vh;
+    background: #161515;
+}
+
+.heading {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 15%;
+}
+
+.heading h1 {
+    color: #f1f1f1;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.heading span {
+    color: #08f748;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    height: 40%;
+    padding: 0 3rem;
+    margin-bottom: 1.2rem;
+}
+
+.col-1,
+.col-2 {
+    text-align: center;
+    flex-basis: 50%;
+    padding-bottom: 1rem;
+}
+
+.col-1 h3,
+.col-2 h3 {
+    color: #f1f1f1;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.col-content {
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.card {
+    /*width: 150px;*/
+    flex-basis: 40%;
+    background: #464141;
+    padding: 1rem 0.8rem;
+    border-radius: .8rem;
+    box-shadow: 3px 4px 5px ;
+}
+
+.col-content h3 {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.col-1 .col-content p {
+    color: #08f748;
+    font-size: 0.9rem;
+}
+
+.col-2 .col-content p {
+    color: #f1f1f1;
+    font-size: 0.9rem;
+}
+
+.extra-content {
+    width: 67%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update,
+.scan {
+    color: #f1f1f1;
+}
+
+.update h3,
+.scan h3 {
+    font-size: 1rem;
+}
+
+.update p,
+.scan p {
+    font-size: .9rem;
+}
+
+.btn button {
+    background: #08f748;
+    border: 1px solid #08f748;
+    padding: .5rem 1.2rem;
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+.scan p span {
+    color: #08f748;
+}
